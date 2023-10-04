@@ -49,13 +49,19 @@ heading.classList.remove("subtitle");
 Create a script where you declare a variable with a student's data
 (name, age and photo URL). Next, get the elements from the HTML
 and fill them in with the student's information.
+```
+const userName = "Josep";
+const userAge = 20;
+const userPhoto = "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fphoto&psig=AOvVaw0UlZVG6XHeYLeX0u-zXv5J&ust=1696528530014000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPiutr373IEDFQAAAAAdAAAAABAE";
+const userAltPhoto =  "user image";
 
-const name = "Josep";
-const age = "20";
-const photo = "img";
-
-const set_name = document.querySelector("student-name");
-const set_age = document.querySelector("student-age");
-const set_photo = document.querySelector("student-photo");
+const setName = document.querySelector(".student-name");
+const setAge = document.querySelector(".student-age");
+const setPhoto = document.querySelector(".student-photo");
 
 
+setName.textContent =  userName; 
+setAge.textContent = userAge;
+setPhoto.src = userPhoto;
+setPhoto.alt = userAltPhoto;
+```
